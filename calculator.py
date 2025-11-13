@@ -1,4 +1,3 @@
-
 # https://github.com/LucaVor/lab11-LV-KHM
 # Partner 1: Luca Voros
 # Partner 2: Kiro Habib
@@ -13,7 +12,7 @@ One function per operation, in order.
 def add(a, b):
     return a + b
 
-def sub(a, b):
+def subtract(a, b):
     return a - b
 
 def mul(a, b):
@@ -25,11 +24,11 @@ def div(a, b):
     else:
         return b/a # raise ZeroDivisionError if a == 0
 
-def log(a, b):
-    if (a<=0 or a==1 or b <=0):
-        raise[ValueError]# use math library + raise ValueError
-    else:
-        return math.log(b,a)
+def logarithm(a, b):
+    if a <= 0 or a == 1 or b <= 0:
+        raise ValueError
+    return math.log(b, a)
+
 def exp(a, b):
     return a**b
 
@@ -41,20 +40,3 @@ def square_root(a):
 
 def hypotenuse(a, b):
     return math.hypot(a, b)
-
-def add(a, b):
-    return a + b
-
-def subtract(a, b):
-    return a - b
-
-def multiply(a, b):
-    return a * b
-
-def logarithm(a, b):
-    if a <= 0 or a == 1 or b <= 0:
-        raise ValueError
-    return math.log(b, a)
-
-def exponent(a, b):
-    return a ** b
