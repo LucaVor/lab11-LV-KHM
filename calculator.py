@@ -21,13 +21,13 @@ def mul(a, b):
 
 def div(a, b):
     if not (a < 0 or a > 0):
-        raise[ZeroDivisionError]
+        raise ZeroDivisionError
     else:
         return b/a # raise ZeroDivisionError if a == 0
 
 def log(a, b):
     if (a<=0 or a==1 or b <=0):
-        raise[ValueError]# use math library + raise ValueError
+        raise ValueError# use math library + raise ValueError
     else:
         return math.log(b,a)
 def exp(a, b):
